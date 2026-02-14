@@ -12,4 +12,7 @@
 // 画像を入れます
 
 // github
+// https://github.com/riku-kai-kun/chat-gumi
+
+// サイト
 // まだないです
