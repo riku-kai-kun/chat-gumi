@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+}
+
+.chat-app {
+  max-width: 760px;
+  margin: 32px auto;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 6px;
+}
+
+.note {
+  margin: 0 0 16px;
+  color: #4b5563;
+}
+
+.messages {
+  height: 420px;
+  overflow-y: auto;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.message {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f1f5f9;
+  line-height: 1.45;
+}
+
+.message:last-child {
+  border-bottom: none;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.chat-form {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 8px;
+}
+
+.chat-form input,
+.chat-form button {
+  height: 40px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+.chat-form button {
+  cursor: pointer;
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.chat-form button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 640px) {
+  .chat-form {
+    grid-template-columns: 1fr;
+  }
+
+  .messages {
+    height: 60vh;
+  }
+}

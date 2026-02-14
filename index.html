@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat</title>
+  <link rel="stylesheet" href="/programs/style.css">
+</head>
+<body>
+  <main class="chat-app">
+    <h1>Simple Chat</h1>
+    <p class="note">同じサーバーに接続している人と簡単に会話できます。</p>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <form id="chat-form" class="chat-form">
+      <input id="name" type="text" maxlength="20" placeholder="名前" required>
+      <input id="text" type="text" maxlength="200" placeholder="メッセージ" required>
+      <button type="submit">送信</button>
+    </form>
+  </main>
+
+  <script src="/programs/chat.js"></script>
+</body>
+</html>
